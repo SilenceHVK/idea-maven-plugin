@@ -58,7 +58,7 @@ public class PluginSettings implements Configurable,Configurable.Composite {
     @Nls(capitalization = Nls.Capitalization.Title)
     @Override
     public String getDisplayName() {
-        return "Elitel-Plugin";
+        return "Hvkcoder-Plugin";
     }
 
     @Nullable
@@ -74,7 +74,6 @@ public class PluginSettings implements Configurable,Configurable.Composite {
 
     @Override
     public void apply() throws ConfigurationException {
-        this.jbtnConnectionTest.doClick();
         if (flag){
             settings.setHost(jtxtHost.getText());
             settings.setPort(jtxtPort.getText());

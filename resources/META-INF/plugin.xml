@@ -16,7 +16,7 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="ElitelPlugin.MvnPackage" class="com.hvkcoder.plugin.MainPlugin" text="MvnPackage">
+    <action id="HvkcoderPlugin.MvnPackage" class="com.hvkcoder.plugin.MainPlugin" text="MvnPackage">
       <add-to-group group-id="ProjectViewAnalysisGroup" anchor="first"/>
     </action>
   </actions>

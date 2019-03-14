@@ -13,6 +13,9 @@
 
 <img src="https://github.com/SilenceHVK/idea-maven-plugin/raw/master/images/idea-sdk.png" alt="IDEA-SDK">
 
+
+Maven 打包代码 
+
 ```java
 MavenRunner runner = MavenRunner.getInstance(project);
 MavenRunnerSettings settings = runner.getState().clone();
@@ -23,4 +26,11 @@ params.setWorkingDirPath(project.getBasePath());
 params.setGoals(Collections.singletonList("package"));
 ```
 
+<img src="https://github.com/SilenceHVK/idea-maven-plugin/raw/master/images/settings.png" alt="Settings">
+
+<img src="https://github.com/SilenceHVK/idea-maven-plugin/raw/master/images/ftp-connection.png" alt="FTP-Connection">
+
+<img src="https://github.com/SilenceHVK/idea-maven-plugin/raw/master/images/mvn-package.png" alt="MVN-Package">
+
+<img src="https://github.com/SilenceHVK/idea-maven-plugin/raw/master/images/package-result.png" alt="Package-Result">
 
