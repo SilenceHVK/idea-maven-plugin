@@ -1,0 +1,24 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>maven-package</name>
+  <version>1.0</version>
+  <vendor email="hvkcoder@gmail.com">hvkcoder</vendor>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <depends>org.jetbrains.idea.maven</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceImplementation="com.hvkcoder.plugin.presistentConfig.PersistentConfig"/>
+    <applicationConfigurable dynamic="true" instance="com.hvkcoder.plugin.ui.PluginSettings"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="ElitelPlugin.MvnPackage" class="com.hvkcoder.plugin.MainPlugin" text="MvnPackage">
+      <add-to-group group-id="ProjectViewAnalysisGroup" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
